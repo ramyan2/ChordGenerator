@@ -1,8 +1,8 @@
 #include "ofApp.h"
+
 //--------------------------------------------------------------
 void ofApp::setup(){
-    
-   
+    keyboard_image.load("keyboard.png");
 
 }
 
@@ -13,7 +13,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+    keyboard_image.draw(0, 0, 1024, 768);
 }
 
 //--------------------------------------------------------------
@@ -79,6 +79,8 @@ void ofApp::keyPressed(int key){
         my_player.setVolume(0.5);
         my_player.play();
     }
+    
+    
 }
 
 //--------------------------------------------------------------
@@ -98,7 +100,7 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-
+    
 }
 
 //--------------------------------------------------------------

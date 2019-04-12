@@ -5,3 +5,4 @@
 ## Code Review #2
 * Wrote in my keyPressed function in my ofApp cpp to play an audio mp3 file for every note on the scale, so that when the user presses the letter of their desired note they can hear the sound of the note. 
 * User must enter uppercase letter for sharps. 
+* Uploaded a picture of a keyboard with displayed notes and an example of how to use it.

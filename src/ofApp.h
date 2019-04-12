@@ -22,4 +22,5 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 		
     ofSoundPlayer my_player;
+    ofImage keyboard_image;
 };
