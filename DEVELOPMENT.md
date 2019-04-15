@@ -5,4 +5,10 @@
 ## Code Review #2
 * Wrote in my keyPressed function in my ofApp cpp to play an audio mp3 file for every note on the scale, so that when the user presses the letter of their desired note they can hear the sound of the note. 
 * User must enter uppercase letter for sharps. 
-* Uploaded a picture of a keyboard with displayed notes and an example of how to use it.
+* Wrote in setup and draw functions and uploaded a picture of a keyboard with displayed notes and an example of how to use it.
+* Figured out how to play a sound when more than one key is pressed by utilizing an array of 255 booleans and writing in the keyReleased and update functions.
+* The array contains 255 booleans each representing a single key on the laptop's keyboard. 
+* In the keyPressed function I set the particular key pressed index to true then in the keyReleased function I set that same index pressed to false.
+* Then in the update function I am able to read multiple keys.
+* Purpose of this is so there is no confusion on lowercase for a normal note and uppercase for a sharp, makes it easier for the user.
+* Updated keyboard image to a nicer one. 

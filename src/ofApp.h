@@ -23,4 +23,5 @@ class ofApp : public ofBaseApp{
 		
     ofSoundPlayer my_player;
     ofImage keyboard_image;
+    bool array[];
 };
