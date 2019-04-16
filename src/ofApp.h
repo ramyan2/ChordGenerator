@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
 
@@ -23,5 +24,8 @@ class ofApp : public ofBaseApp{
 		
     ofSoundPlayer my_player;
     ofImage keyboard_image;
+    
+    ofxPanel gui;
+    ofxFloatSlider volume;
     bool array[];
 };

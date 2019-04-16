@@ -12,3 +12,4 @@
 * Then in the update function I am able to read multiple keys.
 * Purpose of this is so there is no confusion on lowercase for a normal note and uppercase for a sharp, makes it easier for the user.
 * Updated keyboard image to a nicer one. 
+* Added a volume slider so that the user can control the volume of the sound they produce.

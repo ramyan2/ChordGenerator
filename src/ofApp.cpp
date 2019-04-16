@@ -3,6 +3,9 @@
 //--------------------------------------------------------------
 void ofApp::setup(){
     keyboard_image.load("keyboard_image.png");
+    
+    gui.setup();
+    gui.add(volume.setup("volume", 1.0, 0.0, 1.0));
 
 }
 
@@ -42,6 +45,8 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
     keyboard_image.draw(0, 0, 1024, 768);
+    gui.draw();
+    my_player.setVolume(volume);
 }
 
 //--------------------------------------------------------------
