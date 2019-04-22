@@ -40,6 +40,30 @@ void ofApp::update(){
         my_player.setVolume(0.5);
         my_player.play();
     }
+    
+    if (array['a'] && array['M']) {
+        my_player.load("Amajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    
+    if (array['a'] && array['m']) {
+        my_player.load("Aminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['A'] && array['M']) {
+        my_player.load("A#major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    
+    if (array['A'] && array['m']) {
+        my_player.load("A#minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    
 }
 
 //--------------------------------------------------------------
