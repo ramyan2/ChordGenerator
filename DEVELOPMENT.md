@@ -13,3 +13,8 @@
 * Purpose of this is so there is no confusion on lowercase for a normal note and uppercase for a sharp, makes it easier for the user.
 * Updated keyboard image to a nicer one. 
 * Added a volume slider so that the user can control the volume of the sound they produce.
+## Code Review #3
+* Personally recorded 24 audio files consisting of different musical chords.
+* Converted these into mp3 files.
+* Wrote in update function since I need to read two keys being pressed (the note name and its designated key, "g , M" for G Major chord).
+* Am able to generate 24 different chords from the basic notes of a keyboard through the keyPressed, keyReleased, and update methods. 

@@ -64,6 +64,107 @@ void ofApp::update(){
         my_player.play();
     }
     
+    if (array['b'] && array['M']) {
+        my_player.load("Bmajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    
+    if (array['b'] && array['m']) {
+        my_player.load("Bminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['c'] && array['M']) {
+        my_player.load("Cmajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['c'] && array['m']) {
+        my_player.load("Cminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['C'] && array['M']) {
+        my_player.load("C#major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['C'] && array['m']) {
+        my_player.load("C#minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['d'] && array['M']) {
+        my_player.load("D major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['d'] && array['m']) {
+        my_player.load("D minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['D'] && array['M']) {
+        my_player.load("D# major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['D'] && array['m']) {
+        my_player.load("D# minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['e'] && array['M']) {
+        my_player.load("Emajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['e'] && array['m']) {
+        my_player.load("Eminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['f'] && array['M']) {
+        my_player.load("Fmajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['f'] && array['m']) {
+        my_player.load("Fminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['F'] && array['M']) {
+        my_player.load("F#major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['F'] && array['m']) {
+        my_player.load("F#minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['g'] && array['M']) {
+        my_player.load("Gmajor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['g'] && array['m']) {
+        my_player.load("Gminor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['G'] && array['M']) {
+        my_player.load("G#major.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
+    if (array['G'] && array['m']) {
+        my_player.load("G#minor.mp3");
+        my_player.setVolume(0.5);
+        my_player.play();
+    }
 }
 
 //--------------------------------------------------------------
