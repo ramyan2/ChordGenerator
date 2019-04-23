@@ -4,9 +4,14 @@
 void ofApp::setup(){
     keyboard_image.load("keyboard_image.png");
     
+    play.addListener(this, &ofApp::playPressed);
+    stop.addListener(this, &ofApp::stopPressed);
+    
     gui.setup();
     gui.add(volume.setup("volume", 1.0, 0.0, 1.0));
-
+    gui.add(play.setup("play"));
+    
+    my_player.load("F.mp3");
 }
 
 //--------------------------------------------------------------
@@ -234,7 +239,6 @@ void ofApp::mouseDragged(int x, int y, int button){
 
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
-    
 }
 
 //--------------------------------------------------------------
@@ -266,3 +270,14 @@ void ofApp::gotMessage(ofMessage msg){
 void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
+
+//--------------------------------------------------------------
+void ofApp::playPressed(){
+    my_player.play();
+}
+
+//--------------------------------------------------------------
+void ofApp::stopPressed(){
+    my_player.play();
+}
+

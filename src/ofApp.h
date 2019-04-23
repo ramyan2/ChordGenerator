@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxGui.h"
 
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -21,11 +22,15 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+        void playPressed();
+        void stopPressed();
 		
     ofSoundPlayer my_player;
     ofImage keyboard_image;
     
     ofxPanel gui;
     ofxFloatSlider volume;
+    ofxButton play;
+    ofxButton stop;
     bool array[];
 };
