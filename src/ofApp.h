@@ -72,17 +72,13 @@ class ofApp : public ofBaseApp{
     ofSoundPlayer f_sharp_minor;
     ofSoundPlayer g_sharp_minor;
     
-    ofSoundPlayer generalNote;
-    
     ofImage keyboard_image;
     ofImage instructions_page;
     
     map<char, ofSoundPlayer> sounds;
-
+ 
     ofxPanel gui;
     ofxFloatSlider volume;
-    ofxButton play;
     
     bool array[];
-
 };

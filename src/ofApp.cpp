@@ -2,8 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    //load the images and volume slider
     keyboard_image.load("keyboard_image.png");
-    instructions_page.load("SideInstructions.png");
+    instructions_page.load("InstructionsManual.png");
     
     gui.setup();
     gui.add(volume.setup("volume", 1.0, 0.0, 1.0));
@@ -112,7 +113,7 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    //displays the keyboard, instructions, and volume bar
+    //displays the keyboard, instructions, and volume slider
     keyboard_image.draw(300, 0, 730, 768);
     instructions_page.draw(0,0,300, 768);
     gui.draw();
@@ -124,8 +125,6 @@ void ofApp::keyPressed(int key){
     //PROBLEM: if not a keyboard char it breaks my code
     sounds[key].play();
 }
-
-
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
