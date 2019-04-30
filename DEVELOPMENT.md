@@ -24,4 +24,14 @@
 * In my setup function I called the addListener method to my play object that is an ofxButton so that my button can identify when it is pressed, and perform its designated action.
 * When the button is pressed I load the audio file of the particular key pressed by simply calling the load function to my ofSoundPlayer obejct my_player.
 * Fixed some chords that were being generated.
- 
+## Presentation
+* Got rid of all conditionals by first using a map by mapping every character to its particular ofSoundPlayer object.
+* I do this by declaring a map called sounds in my h file as well as declaring many unique soundplayer objects representing each unique note or chord.
+* In my ofApp class, in the setup method, I load all the unique audio files to its correlated unique soundplayer object(example: "C.mp3 for c_note object)
+* Then in the setup method I utilize my sounds map and assign many unique character keys to its corresponsing ofSoundPlayer object.
+* I created my own instructions page as it is very important for my project.
+* In the draw method of the ofApp class I altered the dimensions of the keyboard image and instructions image so I can have both on the screen.
+* Did not find any purpose in the play button as that is exactly what my project does anyway and was redundant, so removed it
+* Realized that it is extremely difficult to not use conditionals when two keys are invovled, so I will only be using one key and explaining which key represents which chord in the intructions page.
+* Cleaned my code by using googel c++ naming conventions, and having better spacing and variable/method names
+
