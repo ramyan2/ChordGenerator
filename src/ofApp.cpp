@@ -122,7 +122,7 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    //PROBLEM: if not a keyboard char it breaks my code
+    //plays the key pressed
     sounds[key].play();
 }
 
